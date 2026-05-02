@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Aura",
+    "slug": "aura",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FDF6F0"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.aura.skincare",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Aura needs camera access to analyze your skin and track your skin progress.",
+        "NSPhotoLibraryUsageDescription": "Aura needs photo library access to upload selfies for skin analysis.",
+        "NSLocationWhenInUseUsageDescription": "Aura uses your location to provide weather-aware skincare recommendations."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FDF6F0"
+      },
+      "package": "com.aura.skincare",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#E8A598",
+          "sounds": []
+        }
+      ],
+      "expo-location",
+      "expo-image-picker"
+    ]
+  }
+}
